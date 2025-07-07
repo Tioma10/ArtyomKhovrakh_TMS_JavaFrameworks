@@ -8,12 +8,12 @@
          http://www.springframework.org/schema/aop
          http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="taskService" class="com.example.xml.TaskService"/>
-    <bean id="loggingAspect" class="com.example.xml.LoggingAspect"/>
+    <bean id="taskService" class="com.example.xml.service.TaskService"/>
+    <bean id="loggingAspect" class="com.example.xml.aspect.LoggingAspect"/>
 
     <aop:config>
         <aop:aspect ref="loggingAspect">
-            <aop:pointcut id="taskPointcut" expression="execution(* com.example.xml.TaskService.performTask(..))"/>
+            <aop:pointcut id="taskPointcut" expression="execution(* com.example.xml.service.TaskService.performTask(..))"/>
             <aop:before method="beforeAdvice" pointcut-ref="taskPointcut"/>
             <aop:after method="afterAdvice" pointcut-ref="taskPointcut"/>
         </aop:aspect>

@@ -1,4 +1,4 @@
-package com.example.xml;
+package com.example.xml.aspect;
 
 public class LoggingAspect {
     public void beforeAdvice() {

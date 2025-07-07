@@ -1,5 +1,7 @@
 package com.example.aop;
 
+import com.example.aop.config.AppConfig;
+import com.example.aop.service.TaskService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {

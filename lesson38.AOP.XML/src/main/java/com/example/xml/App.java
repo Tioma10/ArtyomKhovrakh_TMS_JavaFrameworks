@@ -1,5 +1,6 @@
 package com.example.xml;
 
+import com.example.xml.service.TaskService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {

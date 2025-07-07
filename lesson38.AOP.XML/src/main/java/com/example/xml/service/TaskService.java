@@ -1,4 +1,4 @@
-package com.example.xml;
+package com.example.xml.service;
 
 public class TaskService {
     public void performTask() {
