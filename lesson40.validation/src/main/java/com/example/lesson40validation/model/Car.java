@@ -1,7 +1,9 @@
 package com.example.lesson40validation.model;
 
 import jakarta.validation.constraints.NotBlank;
+import org.springframework.validation.annotation.Validated;
 
+@Validated
 public class Car {
     private int id;
 
